@@ -1,6 +1,5 @@
-<!-- bootstrap template file 20150518 -->
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,19 +18,66 @@
     <![endif]-->
   </head>
   <body>
-    <div id="header" class="container" style="background:red">header</div><!-- header end -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 hidden-xs" style="background:pink">Side1</div>
-        <div class="col-sm-6 col-xs-6" style="background:green">Main</div>
-        <div class="col-sm-3 col-xs-6" style="background:orange">Side2</div>
-      </div><!-- row end -->
-    </div><!-- container end -->
+    <div id="header" class="container" style="background: #ddd;">header</div>
 
-    <div class="container" id="footer" style="background:red">footer</div><!-- footer end -->
+    <div class="container">
+      <table class="table table-striped table-hover table-condensed">
+        <thead>
+          <tr>
+            <th>ID</th><th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>@taguchi</td><td>200</td>
+          </tr>
+          <tr class="warning">
+            <td>@fkoji</td><td>300</td>
+          </tr>
+          <tr>
+            <td>@taiti</td><td>100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="form-inline" style="margin-bottom: 15px;">
+        <div class="form-group">
+          <label class="sr-only control-label" for="email">Email</label>
+          <input type="text" id="email" class="form-control" placeholder="email">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="submit" class="btn btn-primary">
+        </div>
+      </form>
+
+
+      <form class="form-horizontal" style="margin-bottom: 15px;">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email</label>
+          <div class="col-sm-4">
+            <input type="text" id="email" class="form-control" placeholder="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email</label>
+          <div class="col-sm-4">
+            <input type="text" id="email" class="form-control" placeholder="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-4">
+            <input type="submit" value="submit" class="btn btn-primary">
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+    <div id="footer" class="container" style="background: #ddd;">footer</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
